@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task.DAL", "Task.DAL.csproj", "{054A9054-E979-447D-9724-AEC886C9F48B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task.BLL", "..\Task.BLL\Task.BLL.csproj", "{E34D38FD-1CAB-42B2-B5EB-929950EA9D98}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task.PL", "..\Task.PL\Task.PL.csproj", "{B361E848-A527-4F70-BBA3-DB0BA1D72A7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{054A9054-E979-447D-9724-AEC886C9F48B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{054A9054-E979-447D-9724-AEC886C9F48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{054A9054-E979-447D-9724-AEC886C9F48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{054A9054-E979-447D-9724-AEC886C9F48B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E34D38FD-1CAB-42B2-B5EB-929950EA9D98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E34D38FD-1CAB-42B2-B5EB-929950EA9D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E34D38FD-1CAB-42B2-B5EB-929950EA9D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E34D38FD-1CAB-42B2-B5EB-929950EA9D98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B361E848-A527-4F70-BBA3-DB0BA1D72A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B361E848-A527-4F70-BBA3-DB0BA1D72A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B361E848-A527-4F70-BBA3-DB0BA1D72A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B361E848-A527-4F70-BBA3-DB0BA1D72A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14B25D2B-EB8C-493D-86DE-50D006FDEBC2}
+	EndGlobalSection
+EndGlobal

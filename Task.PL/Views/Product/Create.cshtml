@@ -1,0 +1,27 @@
+﻿@model ProductViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create Product</h1>
+
+<div>
+    <div class="col-6">
+
+        <form asp-controller="Product" asp-action="Create">
+          
+            <partial name="CreateUpdatePartialView"/>
+            <button type="submit" class="btn btn-primary">
+                <i class="fa fa-edit"></i>Add
+            </button>
+            <a asp-action="Index" class="btn btn-light">Back To List</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}
+
+ 

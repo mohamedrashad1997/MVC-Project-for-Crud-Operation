@@ -1,0 +1,48 @@
+﻿@model ProductViewModel
+
+@{
+    ViewData["Title"] = "View";
+}
+@{
+    var categories = new SelectList(ViewBag.Categories ?? Enumerable.Empty<Category>(), "CategoryID", "CategoryName");
+}
+
+@*this is partial view for Create And Update Views*@
+
+<div>
+        <input type="hidden" asp-for="ProductId" />
+        <div class="form-group">
+            <label asp-for="@Model.ProductName" class="col-form-label"></label>
+            <input asp-for="@Model.ProductName" class="form-control">
+            <span asp-validation-for="@Model.ProductName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.ProductDescription" class="col-form-label"></label>
+            <input asp-for="@Model.ProductDescription" class="form-control">
+            <span asp-validation-for="@Model.ProductDescription" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.ProductPrice" class="col-form-label"></label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </span>
+                </div>
+                <input asp-for="ProductPrice" class="form-control product-price-update" />
+            </div>
+            <span asp-validation-for="@Model.ProductPrice" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.ProductQuantity" class="col-form-label"></label>
+            <input asp-for="@Model.ProductQuantity" class="form-control">
+            <span asp-validation-for="@Model.ProductQuantity" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label class="col-form-label" asp-for="CategoryID"></label>
+            <select class="form-control" asp-items="@categories" asp-for="CategoryID">
+                <option value="@null"> -------Select Category ------</option>
+            </select>
+        </div>
+</div>
+
