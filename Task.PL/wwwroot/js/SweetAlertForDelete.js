@@ -8,11 +8,11 @@ function functionConfirm(button) {
     })
 
     swalWithBootstrapButtons.fire({
-        title: 'Are you sure?',
-        text: "This action cannot be undone!",
+        title: "Are you sure?",
+      text: "This action cannot be undone!",
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonText: "Yes, delete it!",
+      confirmButtonText: "Yes, delete it!",
         cancelButtonText: "No, cancel!",
         reverseButtons: true,
         customClass: {
@@ -20,7 +20,8 @@ function functionConfirm(button) {
             confirmButton: 'custom-confirm-button', 
             cancelButton: 'custom-cancel-button' 
         }
-    }).then((result) => {
+    })
+        .then((result) => {
         if (result.isConfirmed) {
             $(button).closest('form').submit();
         } else if (
